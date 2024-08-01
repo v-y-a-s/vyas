@@ -1,0 +1,12 @@
+version: '3'
+
+vars:
+  PWD: 
+    sh: pwd
+
+tasks:
+  serve: 
+    cmds: 
+      - hugo serve --disableFastRender --buildDrafts
+
+  

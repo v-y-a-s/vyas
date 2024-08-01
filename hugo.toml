@@ -1,0 +1,127 @@
+baseURL = "http://example.org/"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Vyas Sarangapani"
+theme = "DoIt"
+
+[params]
+  version = "0.2.X"
+  title = "Vyas Sarangapani"
+  description = "Vyas Sarangapani's personal blog"
+
+  [params.search]
+    enable = true
+    type = "fuse"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.fuse]
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
+  [params.image]
+    cacheRemote = true
+    optimise = true
+
+  [params.header]
+    themeChangeMode = "select"
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      name = "Vyas Sarangapani"
+      pre = ""
+      post = ""
+      typeit = false
+
+  [params.footer]
+    enable = true
+    custom = ''
+    hugo = true
+    hostedOn = ''
+    copyright = true
+    author = true
+    since = 2024
+
+  [params.section]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 20
+    [params.section.recentlyUpdated]
+      enable = false
+      rss = false
+      days = 30
+      maxCount = 10
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = false
+      gravatarEmail = ""
+      avatarURL = "/images/avatar.webp"
+      avatarLinkURL = ""
+      title = ""
+      subtitle = "This is My New Hugo Site"
+      typeit = true
+      social = true
+      disclaimer = ""
+
+  [params.social]
+    Linkedin = "vyasraos"
+    BuyMeACoffee = ""
+    RSS = true
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
+
+[author]
+  name = "Vyas Sarangapani"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
