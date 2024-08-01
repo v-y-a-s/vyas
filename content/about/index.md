@@ -7,4 +7,6 @@ lightgallery = true
 
 +++
 
-Starting to write my thoughts to express myself and my ideologies!
+### Personal blog
+
+Refelections & Opinions on technology, philosophy, governments, policies, idealogies and everything else. 
